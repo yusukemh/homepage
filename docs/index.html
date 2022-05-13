@@ -30,6 +30,7 @@
 
             $("#short_me").load("short_me.html")
             $("#short_notes").load("short_notes.html")
+            $('#short_projects').load('short_projects.html')
 
             $("#footer").load("footer.html");
         })
@@ -53,12 +54,18 @@
     <div style="padding: 30px; font-family: Poppins; padding-top: 200px; padding-bottom: 400px; min-height: 600px;">
         <div id="short_me"></div>
 
-        <hr style="margin: 60px 100px 100px 100px">
+        <hr class="divider">
 
         <div id="short_notes"></div>
 
-        <!-- <hr style="margin: 10px 10px 10px 10px;"> -->
-        <div style="color: white;">
+        <hr class="divider">
+
+        <div id="short_projects"></div>
+
+        <hr class="divider">
+
+        <!-- <hr style="margin: 60px 100px 100px 100px; position: relative"> -->
+        <div style="color: white; clear: both">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla facilisis faucibus. Nullam leo
             nulla, tincidunt in leo sit amet, placerat vulputate augue. Ut iaculis pellentesque maximus. Sed bibendum,
             nisi
@@ -116,7 +123,7 @@
             dapibus at eu sem. Morbi vel ex viverra, pharetra tortor sit amet, tristique erat. Donec at sollicitudin
             nunc.
         </div>
-        <hr style="margin: 10px 10px 10px 10px; float: bottom">
+        <!-- <hr style="margin: 10px 10px 10px 10px; float: bottom"> -->
     </div>
     <div id="footer"></div>
 </body>

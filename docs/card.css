@@ -1,4 +1,10 @@
-.card-left{
+.card{
+    /* width: 100%; */
+    /* display: block; */
+    clear: both;
+}
+
+.card-left {
     /* background-color: rgba(255,255,255,0.6); */
     /* border-radius: 10px; */
     /* box-shadow: 0 0 15px 10px rgba(255,255,255,0.65); */
@@ -8,18 +14,22 @@
     width: 60%;
 }
 
-.card-right{
+.card-right {
     /* background-color: rgba(255,255,255,0.6); */
     /* border-radius: 10px; */
     /* box-shadow: 0 0 15px 10px rgba(255,255,255,0.65); */
     margin-right: 5px;
-    padding-right: 5px;
+    padding: 0px 30px 0px 30px;
+    /* right: 0; */
+    /* position: absolute; */
     float: right;
     color: rgb(255, 200, 200);
     width: 60%;
+    /* clear: both; */
 }
 
-.title{
+.title {
     text-align: center;
     font-size: 2.5em;
+    margin-bottom: 30px;
 }

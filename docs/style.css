@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comic+Neue|Gotu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Slabo+27px|Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
@@ -25,4 +25,11 @@
 
 .vertical-menu a:hover {
     background-color: black;
+} */
+
+.divider{
+    margin-top: 50px;
+    /* padding-top: 50px; */
+    margin-bottom: 50px;
+    clear: both;
 }
