@@ -21,14 +21,17 @@
         </script>
 
     <script src="/code/script.js"></script>
+    <!-- mathjax -->
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     <script>
         $(function () {
-            //$("#header").load("menu.html");
+            $("#header").load("/code/components/menu.html");
             $("#home").load("/code/contents/home.html");
             $("#resume").load("/code/contents/resume.html");
             $("#notes").load("/code/contents/notes.html");
             $("#history").load("/code/contents/history.html");
+            $("#footer").load("/code/components/footer.html");
             //$("#footer").load("footer.html");
 
         })
@@ -38,56 +41,35 @@
 </head>
 
 <body>
-    <!-- #include file="include_head.html" -->
+    
+    <div id="header"></div>
+    $$a=3b^2-1\mathcal{N}$$
+    <div class="ui container main">
 
-    <!-- <div id="header"></div> -->
-
-
+    </div>
     <div class="ui container main">
         <div class="ui two column grid" style="background-color:aqua">
             <div class="ui two wide column">
-                <div class="vertical-menu">
+                <!-- <div class="vertical-menu">
                     <a href="#" class="menu-item" onclick="switch_content('home')">Home</a><br>
                     <a href="#" class="menu-item" onclick="switch_content('resume')">Resume</a><br>
                     <a href="#" class="menu-item" onclick="switch_content('notes')">Notes</a><br>
                     <a href="#" class="menu-item" onclick="switch_content('history')">History</a><br>
 
-                </div>
+                </div> -->
             </div>
 
-            <div class="three wide column">
-                <img class="ui medium rounded image" src="/code/images/face.jpeg">
-            </div>
-            <div class="eight wide column">
-                <div id="home" style="display: block;"></div>
-                <div id="resume" style="display: none;"></div>
-                <div id="notes" style="display: none;"></div>
-                <div id="history" style="display: none;"></div>
-                
-
+            <div class="ten wide column small roboto">
+                <div class="small" id="home" style="display: block;"></div>
+                <div class="small" id="home" style="display: block;"></div>
+                <div class="small" id="resume" style="display: none;"></div>
+                <div class="small" id="notes" style="display: none;"></div>
+                <div class="small" id="history" style="display: none;"></div>
             </div>
 
         </div>
     </div>
-
-    <!-- <div id='menu'>
-        <br>
-        <div class="ui inverted container">
-            <div class="ui inverted segment">
-                <div class="ui inverted secondary pointing four item menu">
-                    <a class="active item" href="index.html" id="font">HOME</a>
-                    <a class="item" href="Game.html" id="font">GAME</a>
-                    <a class="item" href="Members.html" id="font">MEMBERS</a>
-                    <a class="item" href="News.html" id="font">NEWS</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
-
+    <div id="footer"></div>
 </body>
 
 </html>

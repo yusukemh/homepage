@@ -23,10 +23,4 @@ function switch_content(pushed) {
         case 'history':
             history.style.display = 'block';
     } 
-    
-    // if (this.style.display === "none") {
-    //     this.style.display = "block";
-    //   } else {
-    //     this.style.display = "none";
-    //   }
 }
