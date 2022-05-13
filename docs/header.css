@@ -19,6 +19,8 @@ ul{
 }
 
 .menu{
+    z-index: 100;
+    position: fixed;
     margin-top: 0px;
     height: 70px;
     width: 100%;

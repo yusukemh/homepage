@@ -21,30 +21,103 @@
         </script>
 
     <!-- mathjax -->
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     <script>
         $(function () {
             $("#header").load("header.html");
+
+            $("#short_me").load("short_me.html")
+            $("#short_notes").load("short_notes.html")
+
             $("#footer").load("footer.html");
         })
     </script>
 
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+
 
 </head>
 
-<body>
+<!-- <body  style="background-image: url('background.jpeg')"> -->
+
+<body style="background-color: black">
 
     <div id="header"></div>
-    $$a=3b^2-1\mathcal{L}$$
-    <div class="ui container main">
-        Hwllo qoeks
-        Hwllo qoeksHwllo qoeksHwllo qoeksHwllo qoeksHwllo qoeks
-        Hwllo qoeks
-        Hwllo qoeks
-        Hwllo qoeksHwllo qoeksHwllo qoeks
-    </div>
+    <!-- <div style="color: white">$$a=3b^2-1\mathcal{L}$$</div> -->
 
+    <div style="padding: 30px; font-family: Poppins; padding-top: 200px; padding-bottom: 400px; min-height: 600px;">
+        <div id="short_me"></div>
+
+        <hr style="margin: 60px 100px 100px 100px">
+
+        <div id="short_notes"></div>
+
+        <!-- <hr style="margin: 10px 10px 10px 10px;"> -->
+        <div style="color: white;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla facilisis faucibus. Nullam leo
+            nulla, tincidunt in leo sit amet, placerat vulputate augue. Ut iaculis pellentesque maximus. Sed bibendum,
+            nisi
+            quis vestibulum gravida, arcu metus maximus ligula, sit amet elementum neque risus a erat. Nullam et maximus
+            lorem. Morbi eros dolor, porttitor lobortis tempus faucibus, rhoncus ac nibh. In id ex tristique, varius
+            turpis
+            in, molestie lectus. Ut dignissim massa arcu, sed facilisis orci sodales iaculis. Nunc quis odio et odio
+            vestibulum vulputate in non libero.
+
+            Quisque gravida, eros pretium hendrerit tempus, dui sem porttitor erat, ut varius lorem nulla vel massa.
+            Nullam
+            a lorem tristique, dapibus sem a, finibus nunc. Aenean eget eros purus. Donec tortor ipsum, varius ac
+            laoreet
+            vehicula, congue quis nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos
+            himenaeos. Donec fermentum odio ac nulla consequat congue. Praesent massa dolor, lacinia ut ornare ut,
+            ullamcorper vel lectus. In vel tellus purus. Ut tincidunt erat ipsum, in bibendum massa egestas vel. Ut
+            accumsan
+            eu urna nec egestas. Sed eget sagittis metus, at facilisis lacus. Sed sit amet massa sagittis, mattis quam
+            eu,
+            faucibus leo. Vivamus vitae lacus at elit hendrerit efficitur. Pellentesque pellentesque enim nec nibh
+            tempus
+            vestibulum. Pellentesque id gravida dolor.
+
+            Suspendisse sodales consequat ipsum quis convallis. Nunc lorem massa, posuere a faucibus et, faucibus
+            tristique
+            ipsum. Etiam lorem ligula, fringilla vel sapien ac, cursus suscipit tellus. Sed blandit odio elit, et rutrum
+            ante vulputate sed. Praesent id mollis quam, et consequat massa. Phasellus sodales orci quis ligula tempus,
+            non
+            pharetra arcu pretium. Praesent eu ligula volutpat, maximus erat non, condimentum ante. Proin id nisl
+            molestie,
+            ultrices nulla eget, egestas massa. Sed id diam ac mi imperdiet euismod nec imperdiet magna. Nullam eget
+            varius
+            nunc. Aliquam consectetur tincidunt urna pretium ultrices.
+
+            Curabitur auctor dignissim libero, pharetra ultricies dui elementum in. Integer fringilla magna urna, at
+            interdum nisi rutrum ac. Maecenas nec facilisis neque. Nam dapibus augue eu erat imperdiet vehicula. Morbi
+            lacus
+            urna, tincidunt vel porta quis, mattis eu eros. Ut sollicitudin lacus non auctor blandit. Mauris eget ligula
+            at
+            orci malesuada maximus sit amet vel ipsum.
+
+            Duis tincidunt convallis risus, quis bibendum sapien porta ut. Integer vehicula tristique ex tempor maximus.
+            Ut
+            imperdiet id ipsum non tristique. Sed odio lectus, commodo mollis semper non, vulputate id enim. Sed
+            fringilla,
+            mauris sed vehicula semper, est eros laoreet nisl, tincidunt molestie est mauris in orci. Phasellus sed
+            purus
+            lacus. Vestibulum auctor venenatis mauris, vestibulum aliquam nulla pellentesque eu. Aliquam consequat
+            pretium
+            magna. Nam porta vel massa eget faucibus. Vestibulum consequat convallis lacinia. Etiam non maximus elit, ac
+            cursus nunc. Duis pellentesque ligula tincidunt tellus pellentesque tristique. Morbi suscipit, tortor nec
+            volutpat efficitur, orci nulla iaculis nibh, non vulputate risus erat ac leo. Aliquam id arcu sed lectus
+            gravida
+            dapibus at eu sem. Morbi vel ex viverra, pharetra tortor sit amet, tristique erat. Donec at sollicitudin
+            nunc.
+        </div>
+        <hr style="margin: 10px 10px 10px 10px; float: bottom">
+    </div>
     <div id="footer"></div>
 </body>
 
