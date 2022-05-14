@@ -30,7 +30,18 @@
     animation: fadeIn linear 0.5s;
 
     animation: transitionIn 0.75s;
+    color: var(--text);
+
+    /* transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden; */
 }
+
+/* .container.active{
+    opacity: 1;
+    height: auto;
+} */
 
 @keyframes transitionIn {
     from {

@@ -60,3 +60,7 @@ ul{
     left: 0;
     width: 100%;
 }
+
+.menu-item:hover{
+    cursor: pointer;
+}

@@ -3,18 +3,19 @@
 
 <head>
     <link rel="stylesheet" href="header.css">
+    <script src="script.js"></script>
 </head>
 
 
     <header>
         <div class="menu">
             <ul class="list" style="min-width: 50%">
-                <li><a class="menu-item" href="index.html">Home</a></li>
-                <li><a class="menu-item" href="long_me.html">Me</a></li>
-                <li><a class="menu-item" href="#">Notes</a></li>
-                <li><a class="menu-item" href="#">Projects</a></li>
-                <li><a class="menu-item" href="#">Archive</a></li>
-                <li><a class="menu-item" href="#">Resume</a></li>
+                <li><a class="menu-item" onclick="switch_content('home')">Home</a></li>
+                <li><a class="menu-item" onclick="switch_content('me')">Me</a></li>
+                <li><a class="menu-item" onclick="switch_content('notes')">Notes</a></li>
+                <li><a class="menu-item" onclick="switch_content('projects')">Projects</a></li>
+                <li><a class="menu-item" onclick="switch_content('archive')">Archive</a></li>
+                <li><a class="menu-item" onclick="switch_content('resume')">Resume</a></li>
             </ul>
             <div style="width:500%"></div>
         </div>
