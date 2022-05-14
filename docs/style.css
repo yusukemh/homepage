@@ -1,35 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Comic+Neue|Gotu&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Slabo+27px|Titillium+Web&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-.main {
-    margin: 10rem;
+:root{
+    --poppins: "Poppins", sans-sefit;
+    --light: #c4c4c4;
+    --dark: #161616;
+    --white: #f7f7f7;
+    --text: rgb(255, 200, 200);
+    --text_dark: rgb(255, 180, 130);
+    --dark_blue: rgb(80,110,255);
 }
-
-.small {
-    font-size: 1.2rem;
-}
-
-.roboto {
-    font-family: Verdana, sans-serif;
-}
-
-.vertical-menu a{
-    background-color: yellow;
-    display: block;
-    padding: 12px;
-    font-size: 1rem;
-}
-
-.vertical-menu a:hover {
-    background-color: black;
-} */
 
 .divider{
     margin-top: 50px;
-    /* padding-top: 50px; */
     margin-bottom: 50px;
     clear: both;
 }

@@ -1,32 +1,20 @@
 .card{
-    /* width: 100%; */
-    /* display: block; */
     font-size:18px;
     clear: both;
+    color: var(--text);
 }
 
 .card-left {
-    /* background-color: rgba(255,255,255,0.6); */
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 15px 10px rgba(255,255,255,0.65); */
     margin-left: 5px;
     padding-left: 5px;
-    color: rgb(255, 200, 200);
     width: 60%;
 }
 
 .card-right {
-    /* background-color: rgba(255,255,255,0.6); */
-    /* border-radius: 10px; */
-    /* box-shadow: 0 0 15px 10px rgba(255,255,255,0.65); */
     margin-right: 5px;
     padding: 0px 30px 0px 30px;
-    /* right: 0; */
-    /* position: absolute; */
     float: right;
-    color: rgb(255, 200, 200);
     width: 60%;
-    /* clear: both; */
 }
 
 .title {
@@ -34,3 +22,56 @@
     font-size: 2.5em;
     margin-bottom: 30px;
 }
+
+.list-item{
+    position: relative;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.list-item:hover{
+    color: var(--text_dark);
+}
+
+.list-item::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text_dark);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.2s ease;
+}
+
+.list-item:hover::before{
+    transform: scaleX(1);
+}
+
+.here{
+    position: relative;
+    text-decoration: none;
+}
+
+.here::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark_blue);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.2s ease;
+}
+
+.here:hover::before{
+    transform: scaleX(1);
+}
+
+

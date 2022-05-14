@@ -1,12 +1,5 @@
 /* https://www.youtube.com/watch?v=our2WMvPegM */
 
-:root{
-    --poppins: "Poppins", sans-sefit;
-    --light: #c4c4c4;
-    --dark: #161616;
-    --white: #f7f7f7;
-}
-
 *::after{
     padding: 0;
     margin: 0;
@@ -39,7 +32,7 @@ ul{
     list-style: none;
 }
 
-.list .list-item{
+.list .menu-item{
     position: relative;
     color: var(--light);
     text-decoration: none;
@@ -48,7 +41,7 @@ ul{
     font-family: sans-serif;
 }
 
-.list .list-item::after{
+.list .menu-item::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -63,7 +56,7 @@ ul{
     box-sizing: border-box;
 }
 
-.list .list-item:hover::after{
+.list .menu-item:hover::after{
     left: 0;
     width: 100%;
 }
