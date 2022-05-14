@@ -18,16 +18,24 @@
     <!-- Loading the contents -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!-- mathjax -->
     <script type="text/javascript"
         src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?...">
+    <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?...">
         </script> -->
-    
 
-        <!-- <script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script> -->
+    <script type="text/javascript">
+        if (window.MathJax) {
+            MathJax.Hub.Queue(
+                ["Typeset", MathJax.Hub]
+            );
+        }
+    </script>
+
+
+    <!-- <script type=”text/javascript” src=”http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML”></script> -->
 
     <script>
         $(function () {
@@ -53,8 +61,7 @@
 
 <!-- <body  style="background-image: url('background.jpeg')"> -->
 
-<body style=
-"background-color: rgba(0,0,0,0.7); background-image: url(background.jpeg);
+<body style="background-color: rgba(0,0,0,0.7); background-image: url(background.jpeg);
 background-attachment: fixed; background-blend-mode: darken;
 background-repeat: no-repeat; background-size: cover;
 ">
