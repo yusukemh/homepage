@@ -1,0 +1,44 @@
+/* :root{
+    --link_default_blue: rgb(80, 110, 255);
+} */
+
+.link_animation{
+    position: relative;
+    /* color: var(--text); */
+    text-decoration: none;
+}
+
+.link_animation:hover{
+    cursor: pointer;
+}
+
+.link_animation::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--link_default_blue);
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.2s ease;
+}
+
+.link_animation:hover::before{
+    transform: scaleX(1);
+}
+
+
+.link_customcolor{
+    color: var(--text);
+}
+.link_customcolor:hover{
+    color: var(--text_dark);
+}
+
+.link_customcolor::before{
+    background-color: var(--text_dark);
+}
+

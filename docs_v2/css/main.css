@@ -1,0 +1,5 @@
+.main{
+    padding-top: calc(var(--header_height) + 20px);
+    padding-bottom: var(--footer_height);
+    padding-bottom: 400px;
+}

@@ -1,0 +1,29 @@
+.content-wrapper {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, margin 0.5s ease-in-out;
+    max-height: 0; /* Start hidden */
+    opacity: 0;
+    margin-top: 0;
+
+
+    /* width: 100vw; */
+    position: relative;
+    left: -10%;
+    right: 50%;
+    /* margin-left: -50vw; */
+    /* margin-right: 400px; */
+}
+
+.hidden-content {
+    background-color: #c71c1c;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* When content is shown */
+.content-wrapper.show {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px; /* Gradually appears with smooth margin */
+    margin-bottom: 10px;
+}

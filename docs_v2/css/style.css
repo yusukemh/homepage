@@ -1,0 +1,22 @@
+:root {
+    /* --poppins: "Poppins", sans-sefit; */
+    --light: #c4c4c4;
+    --dark: #161616;
+    --white: #f7f7f7;
+    --text: rgb(255, 200, 200);
+    --text_dark: rgb(255, 180, 130);
+    --link_default_blue: rgb(80, 110, 255);
+    --header_height: 70px;
+    --footer_height: 160px;
+}
+
+
+/* .card{
+    font-family: Poppins;
+} */
+
+
+.background{
+    font-family: Poppins;
+    background-color: blue
+}

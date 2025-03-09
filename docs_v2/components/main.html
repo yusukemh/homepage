@@ -1,0 +1,142 @@
+
+<style>
+.container {
+    display: flex;
+    align-items: center; /* Aligns text vertically in the middle */
+    gap: 20px; /* Adds spacing between image and text */
+}
+
+.container img {
+    width: 200px; /* Adjust image size */
+    height: auto;
+}
+
+.text {
+    flex: 1; /* Allows text to take remaining space */
+}
+.divider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    clear: both;
+    color: black;
+}
+
+.misc{
+    font-size: 0.9em;
+    font-style: italic;
+    padding-left: 1em;
+}
+
+/* .title{
+    font-size: 10vw;
+} */
+
+
+</style>
+    <div class="card card-left">
+        <div class='title' style="font-size: 6vw;">Yusuke Hatanaka</div>
+        <div class="container">
+            <img src="./imgs/face.jpeg" style="width:120px;height:120px; border-radius: 50%; display: inline;">
+            <div class="text">
+                &emsp; I am a graduate student at the University of Hawaii at Manoa in the Information and
+                Computer Sciences department. Under supervision of Dr. Peter Sadowski, I conduct research on the application of machine learning in climate and weather.<br>
+                &emsp; Click <a class="link_animation" href="#">here</a> to find out more including my academic and personal history.
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="divider"></div>
+
+
+    <div class="card card-right">
+        <div class='title'>Projects</div>
+        My interest is centered around applying machine learning to solving problems involving climate and weather in Hawai`i.
+        <ul id="projectlist">
+            <!-- <li><a class="link_animation" onclick="toggleContent(event, 'land')">Location Agnostic Neural Downscaler</a></li>
+                <div class="content-wrapper" id="land">
+                    <div class="hidden-content">
+                        Hawai`i depends heavily on rainfall for its freshwater resources. In this project, I worked on
+                        <br><a class="link_animation" onclick="toggleContent(event)">Close</a>
+                    </div>
+                </div>
+            <li><a class="link_animation">Topograohical Gaussian Process</a></li>
+            <li><a class="link_animation">Diffusion Models for High Resolution Solar Irradiance</a></li> -->
+        </ul>
+    </div>
+
+    <div class="card card-left">
+        <div class='title'>Professional Experience</div>
+        <ul>
+            <li><b>PI-CASC Scholar,</b><span class="misc">Graduate Research Assistant</span></li>
+            <li><b>MITRE Corporation,</b><span class="misc">Contract</span></li>
+            <li><b>Nimbus-AI, LLC, </b><span class="misc">Machine Learning Consultant</span></li>
+            <li><b>RedVox. Inc., </b><span class="misc">Graduate Research Assistant</span></li>
+        </ul>
+        <div>
+        </div>
+    </div>
+
+
+    <div class="card card-right">
+        <div class='title'>Education</div>
+        <ul>
+            <li>University of Hawai`i at Manoa</li>
+                <ul>
+                    <li>Ph.D in Computer Science<span class="misc">Currently Enrolled</span></li>
+                    <li>M.S. in Computer Science<span class="misc">Completed Dec, 2022</span></li>
+                    <li>B.S. in Computer Science, Data Science Track<span class="misc">Completed Dec, 2020</span></li>
+                </ul>
+            
+        </ul>
+        <div>
+        </div>
+    </div>
+
+
+    <script>
+        for (let i = 0; i < projects.length; i ++){
+            li = document.createElement('li')
+
+            a = document.createElement('a')
+            a.innerHTML = projects[i].project_name
+            a.onclick = () => toggleContent(event, projects[i].project_id)
+            a.className = 'link_animation'
+
+            hidden_wrapper = document.createElement('div')
+            hidden_wrapper.className = "content-wrapper"
+            hidden_wrapper.id = projects[i].project_id
+            
+            content = document.createElement('div')
+            content.className = 'hidden-content'
+            content.innerHTML = projects[i].summary + "<br><br>"
+
+            _close = document.createElement('a')
+            _close.className = 'link_animation'
+            _close.onclick = () => toggleContent(event, projects[i].project_id)
+            _close.innerHTML = "Close"
+
+            content.appendChild(_close)
+            li.appendChild(a)
+            li.appendChild(hidden_wrapper)
+            hidden_wrapper.appendChild(content)
+            
+            document.getElementById("projectlist").appendChild(li)
+        }
+
+
+        function toggleContent(event, id) {
+            event.preventDefault(); // Prevent page jump
+            let contentWrapper = document.getElementById(id);
+
+            // Toggle "show" class
+            contentWrapper.classList.toggle("show");
+
+            // Adjust max-height dynamically to fit content
+            if (contentWrapper.classList.contains("show")) {
+                contentWrapper.style.maxHeight = contentWrapper.scrollHeight + "px";
+            } else {
+                contentWrapper.style.maxHeight = "0";
+            }
+        }
+    </script>
