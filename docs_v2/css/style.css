@@ -16,7 +16,18 @@
 } */
 
 
-.background{
+/* .background{
     font-family: Poppins;
     background-color: blue
+} */
+
+.background {
+    font-family: Poppins;
+    /* background-color: rgba(10, 4, 4, 0.8); */
+    background-color: rgba(0, 0, 0, 1);
+    /* background-image: url(../imgs/background.jpeg); */
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

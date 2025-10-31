@@ -4,7 +4,7 @@ var projects = [
         "project_id": "project_land",
         "summary": "Deep learning model for monthly rainfall interpolation in Hawai`i.",
         "abstract": "",
-        "img": "",
+        "img": "./imgs/land.png",
     },
     {
         "project_name": "Topographical Gaussian Process",

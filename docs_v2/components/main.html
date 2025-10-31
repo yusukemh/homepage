@@ -27,41 +27,30 @@
     padding-left: 1em;
 }
 
-/* .title{
-    font-size: 10vw;
-} */
+.title{
+    font-size: max(6vw, 2.5em);
+}
 
 
 </style>
     <div class="card card-left">
-        <div class='title' style="font-size: 6vw;">Yusuke Hatanaka</div>
+        <div class='title'>Yusuke Hatanaka</div>
         <div class="container">
             <img src="./imgs/face.jpeg" style="width:120px;height:120px; border-radius: 50%; display: inline;">
             <div class="text">
-                &emsp; I am a graduate student at the University of Hawaii at Manoa in the Information and
-                Computer Sciences department. Under supervision of Dr. Peter Sadowski, I conduct research on the application of machine learning in climate and weather.<br>
-                &emsp; Click <a class="link_animation" href="#">here</a> to find out more including my academic and personal history.
+                &emsp; I am a graduate student at the University of Hawaii at Manoa pursuing PhD degree in Computer Science
+                under Dr. Peter Sadowski. I conduct research on the application of machine learning in climate and weather.
             </div>
-        </div>
-        <div>
         </div>
     </div>
     <div class="divider"></div>
 
 
     <div class="card card-right">
-        <div class='title'>Projects</div>
+        <div class='title'>Research</div>
         My interest is centered around applying machine learning to solving problems involving climate and weather in Hawai`i.
         <ul id="projectlist">
-            <!-- <li><a class="link_animation" onclick="toggleContent(event, 'land')">Location Agnostic Neural Downscaler</a></li>
-                <div class="content-wrapper" id="land">
-                    <div class="hidden-content">
-                        Hawai`i depends heavily on rainfall for its freshwater resources. In this project, I worked on
-                        <br><a class="link_animation" onclick="toggleContent(event)">Close</a>
-                    </div>
-                </div>
-            <li><a class="link_animation">Topograohical Gaussian Process</a></li>
-            <li><a class="link_animation">Diffusion Models for High Resolution Solar Irradiance</a></li> -->
+            <!-- This is where projects links are added -->
         </ul>
     </div>
 
@@ -73,8 +62,6 @@
             <li><b>Nimbus-AI, LLC, </b><span class="misc">Machine Learning Consultant</span></li>
             <li><b>RedVox. Inc., </b><span class="misc">Graduate Research Assistant</span></li>
         </ul>
-        <div>
-        </div>
     </div>
 
 
@@ -89,9 +76,9 @@
                 </ul>
             
         </ul>
-        <div>
-        </div>
     </div>
+
+    <!-- <div class="card card right" id="temp"></div> -->
 
 
     <script>
@@ -109,19 +96,22 @@
             
             content = document.createElement('div')
             content.className = 'hidden-content'
-            content.innerHTML = projects[i].summary + "<br><br>"
+            content.id = "hidden-content" + projects[i].project_id
+            // content.innerHTML = projects[i].summary + "<br><br>"
 
             _close = document.createElement('a')
             _close.className = 'link_animation'
             _close.onclick = () => toggleContent(event, projects[i].project_id)
             _close.innerHTML = "Close"
 
-            content.appendChild(_close)
             li.appendChild(a)
             li.appendChild(hidden_wrapper)
             hidden_wrapper.appendChild(content)
             
             document.getElementById("projectlist").appendChild(li)
+            createImageTextDiv(
+                content.id, projects[i].img, "medium", projects[i].summary);
+            content.appendChild(_close)
         }
 
 
@@ -139,4 +129,68 @@
                 contentWrapper.style.maxHeight = "0";
             }
         }
+
+        function createImageTextDiv(targetId, imageSrc, imageSize, text) {
+            const sizes = {
+                small: "100px",
+                medium: "150px",
+                large: "200px"
+            };
+
+            // Get the target container
+            const targetDiv = document.getElementById(targetId);
+            if (!targetDiv) {
+                console.error(`Element with ID '${targetId}' not found.`);
+                return;
+            }
+
+            // Create main container div
+            const container = document.createElement("div");
+            // container.style.maxWidth = "600px";
+            container.style.overflow = "hidden";
+            // container.style.width = '100%';
+            // container.style.display = 'flex';
+            // container.style.alignItems = 'flex-start';
+            // container.style.flexWrap = 'wrap';
+            
+
+            // Create image element
+            const img = document.createElement("img");
+            // img.style.overflow = 'hidden';
+            img.src = imageSrc;
+            img.alt = "Image";
+            img.style.float = "left";
+            // img.style.position = 'absolute';
+            img.style.marginRight = "15px";
+            // img.style.width = sizes[imageSize] || sizes.medium; // Default to medium
+            // img.style.width = "28vw";
+            img.style.width = "33%";
+            // img.style.display = 'flex';
+            // img.style.flex = '0 0 auto';
+            // img.style.width = '100%';
+            img.style.height = "auto";
+
+            // Create paragraph element
+            const p = document.createElement("p");
+            p.textContent = text;
+            p.style.overflow = "hidden";
+            // p.style.alignSelf = 'center';
+            // p.style.position = "absolute";
+            p.style.left = "37.5%";
+            // p.style.flex = "1";
+            // p.style.transform = "translateX(-50%)";
+
+            // Append elements to container
+            container.appendChild(img);
+            container.appendChild(p);
+
+            // Append container to the target div
+            targetDiv.appendChild(container);
+        }
+
+
+        // Example usage:
+        // const divElement = createImageTextDiv("temp", "./imgs/face.jpeg", "medium", "This is some sample text that wraps.");
+        // document.body.appendChild(divElement); // Append to the document body
+
     </script>

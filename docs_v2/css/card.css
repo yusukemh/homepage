@@ -1,5 +1,6 @@
 .card{
-    font-size:max(15px, 1.8vw);
+    /* font-size:min(1000px, 1.8vw); */
+    font-size: clamp(15px, 1.8vw, 22px);
     clear: both;
     color: var(--text);
     min-width: 20em;
@@ -9,20 +10,20 @@
 .card-left {
     margin-left: 5px;
     padding-left: 5px;
-    width: 80%;
+    width: 65%;
 }
 
 .card-right {
     margin-right: 5px;
     padding: 0px 30px 0px 30px;
     float: right;
-    width: 80%;
+    width: 65%;
 }
 
 .title {
     text-align: center;
-    /* font-size: 2.5em; */
-    font-size: 4vw;
+    font-size: 60px !important;
+    font-size: clamp(45px, 4vw, 60px) !important;
     margin-bottom: 30px;
-    line-height: 1.4em;
+    line-height: 1.2em;
 }
