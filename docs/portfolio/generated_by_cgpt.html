@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Statement of Purpose • Evidence of Competency • Scholarly Ability</title>
   <meta name="description" content="Statement of Purpose, Evidence of Core Competency, and Evidence of Scholarly Ability — single-file template." />
+
   <style>
     /* Base */
     :root{
@@ -169,12 +170,18 @@
 <body>
   <div class="wrap" role="main">
     <header aria-label="Document header">
-      <div class="logo" aria-hidden="true">YH</div>
+      <div class="logo" aria-hidden="true">SP</div>
       <div>
-        <h1>Yusuke Hatanaka PhD. Portfolio</h1>
-        <p class="muted">Statement of Purpose, Evidence of Core Competency, Evidence of Scholarly Ability.</p>
+        <h1>Statement of Purpose — Evidence of Competency — Scholarly Ability</h1>
+        <p class="muted">A concise single-file template. Replace placeholders with your real text, links, and citations.</p>
       </div>
     </header>
+
+    <nav aria-label="In-page navigation">
+      <a class="nav-link" href="#purpose">Statement of Purpose</a>
+      <a class="nav-link" href="#competency">Evidence of Core Competency</a>
+      <a class="nav-link" href="#scholarship">Evidence of Scholarly Ability</a>
+    </nav>
 
     <!-- Statement of Purpose -->
     <section id="purpose" class="card" aria-labelledby="purpose-heading">
@@ -210,12 +217,46 @@
     <section id="competency" class="card" aria-labelledby="competency-heading">
       <div class="section-head">
         <h2 id="competency-heading">2. Evidence of Core Competency</h2>
+        <div class="subtitle">Skills, coursework, professional experience, and artifacts</div>
       </div>
 
+      <p class="muted" style="margin-top:8px">
+        Show concrete proof of core competencies (technical skills, methodologies, domain knowledge). Include links to artifacts (code, reports, portfolios), short descriptions, and outcomes.
+      </p>
+
+      <div class="grid-2" style="margin-top:12px">
+        <div>
+          <h4 class="item-title">Technical Skills</h4>
+          <p class="item-meta">Programming, tools, and methods</p>
+          <p class="item-desc"><span class="tag">Python</span><span class="tag">Git</span><span class="tag">Machine Learning</span>
+          <br>Examples: implemented data-processing pipelines for X; authored reusable libraries; unit-tested production code.</p>
+        </div>
+
+        <div>
+          <h4 class="item-title">Relevant Projects</h4>
+          <p class="item-meta">Short descriptions + links to artifacts</p>
+
+          <div style="margin-top:8px">
+            <p style="margin:0"><strong>Project A</strong> — <span class="muted">Jan 2024</span></p>
+            <p class="item-desc" style="margin-top:6px">Brief: What it did, your role, technical highlights, and a measurable outcome (e.g., improved performance, users reached). <br><a href="#" aria-label="Project A link">Link to repo / report</a></p>
+          </div>
+
+          <div style="margin-top:12px">
+            <p style="margin:0"><strong>Project B</strong> — <span class="muted">Aug 2023</span></p>
+            <p class="item-desc" style="margin-top:6px">Brief: What it did, your role, and why it demonstrates competency. <br><a href="#" aria-label="Project B link">Link to demo / slides</a></p>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid rgba(15,23,42,0.04);margin:16px 0">
+
       <div>
+        <h4 class="item-title">Professional / Teaching Experience</h4>
+        <p class="item-meta">Roles that show applied competency</p>
+
         <div style="margin-top:8px">
-          <p style="margin:0"><strong>M.S. in Computer Science</strong> — <span class="muted">University of Hawai`i at Manoa, Fall 2022</span></p>
-          <p class="item-desc" style="margin-top:6px">Digital Diploma publicly available through <a href="https://www.hawaii.edu/cecredentials/validate/">CeCredential</a>. Verification Code: 23YF-FU8Y-Y6AU</p>
+          <p style="margin:0"><strong>Job or TA Role</strong> — <span class="muted">Employer / Institution • dates</span></p>
+          <p class="item-desc" style="margin-top:6px">Short bullets describing responsibilities and accomplishments that relate to core skills (e.g., designed curriculum, led code review, optimized model inference).</p>
         </div>
       </div>
     </section>
@@ -224,61 +265,45 @@
     <section id="scholarship" class="card" aria-labelledby="scholarship-heading">
       <div class="section-head">
         <h2 id="scholarship-heading">3. Evidence of Scholarly Ability</h2>
+        <div class="subtitle">Research, publications, presentations, and critical thinking</div>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        Summarize your scholarly output and reasoning skills: publications, preprints, conference talks, posters, technical reports, or high-quality coursework / theses.
+      </p>
+
+      <div style="margin-top:12px">
+        <h4 class="item-title">Publications & Preprints</h4>
+        <p class="item-meta">Peer-reviewed work and preprints</p>
+
+        <ol style="margin:8px 0 0 20px">
+          <li><strong>Author, Title</strong>. Venue, Year. Short one-line summary of contribution. <a href="#" aria-label="paper 1 link">[PDF]</a></li>
+          <li><strong>Author, Title</strong>. Venue, Year. One-line summary of result and significance. <a href="#" aria-label="paper 2 link">[PDF]</a></li>
+        </ol>
       </div>
 
       <div style="margin-top:12px">
-        <h4 class="item-title">M.S. Plan A Thesis</h4>
-        <ul style="margin:8px 0 0 20px">
-          <li><strong>Machine Learning Based Statistical Downscaling for Rainfall on Hawaiian Islands</strong>. 2022. <p class="item-desc" style="margin-top:6px">Manuscript available through <a href="https://scholarspace.manoa.hawaii.edu/items/e350b5f1-ab19-4fdd-b0f3-a8d496db1d5d" aria-label="paper 1 link">[ScholarSpace]</a><p class="item-desc" style="margin-top:6px"></p></li>
-        </ul>
+        <h4 class="item-title">Presentations & Teaching</h4>
+        <p class="item-meta">Invited talks, conference presentations, and teaching experience</p>
+        <p class="item-desc">E.g., "Invited talk at XYZ workshop — concise summary; developed and delivered advanced graduate course on ... (link to syllabus/slides)." </p>
       </div>
 
+      <div style="margin-top:12px">
+        <h4 class="item-title">Research Statement (brief)</h4>
+        <p class="item-desc">Explain the central research question(s) you've addressed, the methods you used, key results, and future directions. Keep it focused and tie to the Statement of Purpose objectives.</p>
+      </div>
 
       <hr style="border:none;border-top:1px solid rgba(15,23,42,0.04);margin:16px 0">
-      <div style="margin-top:12px">
-        <h4 class="item-title">Technical Report</h4>
 
-        <!-- <p class="item-meta">Peer-reviewed work and preprints</p> -->
-
-        <ul style="margin:8px 0 0 20px">
-          <li><strong><u>Yusuke Hatanaka</u>, Yannik Glaser, Geoff Galgon, Giuseppe Torri, Peter Sadowski. <i>Diffusion Models for High-resolution Solar Forecasts</i></strong>. 2023. <p class="item-desc" style="margin-top:6px">Manuscript available at <a href="https://arxiv.org/abs/2302.00170" aria-label="paper 1 link">[arXiv]</a><p class="item-desc" style="margin-top:6px"></p></li>
-          <p class="item-meta">First author. Cited by 27 as of 2025.</p>
-
-          <li><strong><u>Yusuke Hatanaka</u>, Amila Indika, Thomas Giambelluca, Peter Sadowski . <i>Statistical Downscaling from Sparse Observations with Deep Learning for Mean Monthly Rainfall Projections in Hawai`i</i></strong>. 2025. <p class="item-desc" style="margin-top:6px"></li>
-          <p class="item-meta">First author. Submitted to <i>Artificial Intelligence for the Earth Systems</i> in 2024. Currently under revision.</p>
-          <!-- <li><strong>Author, Title</strong>. Venue, Year. One-line summary of result and significance. <a href="#" aria-label="paper 2 link">[PDF]</a></li> -->
-        </ul>
-
+      <div>
+        <h4 class="item-title">References & Supporting Materials</h4>
+        <p class="item-meta">People who can speak to your scholarship</p>
+        <p class="item-desc">List 2–3 referees (name, title, institution, email) and any supplementary materials (links to datasets, code used in publications, reproducible notebooks).</p>
       </div>
-    </section>
-
-
-    <!-- Other Evidence of Professional Capacity -->
-    <section id="scholarship" class="card" aria-labelledby="scholarship-heading">
-      <div class="section-head">
-        <h2 id="scholarship-heading">4. Other Evidence of Professional Capacity</h2>
-      </div>
-
-      <div style="margin-top:12px">
-        <h4 class="item-title">Professional Presentations</h4>
-        <ul style="margin:8px 0 0 20px">
-          <li><strong>Machine Learning For High-Resolution Downscaling in the Hawaiian Islands</strong>. 2025. Guam.
-            <p class="item-desc" style="margin-top:6px">Presented at <i>Graduate Student Research Symposium</i> hosted by Pacific Islands Climate Adaptation Science Center. Article available
-              <a href="https://pi-casc.soest.hawaii.edu/news/graduate-student-research-symposium-2025/" aria-label="paper 1 link">here</a>.</p>
-            <p class="item-desc" style="margin-top: 6px;">Related article: <a href="https://pi-casc.soest.hawaii.edu/news/mapping-rainfall-building-resilience-in-hawaii/" aria-label="paper 1 link">Student Spotlight: Mapping Rainfall, Building Resilience in Hawai`i</a>.</p>
-          </li>
-
-
-          <li><strong>A Deep Learning Approach toImproving Projections of Future Climate in Hawai`i</strong>. 2024. Honolulu.
-            <p class="item-desc" style="margin-top:6px">Presented at 2024 AAG Annual Meeting.
-          </li>
-        </ul>
-      </div>
-
     </section>
 
     <footer>
-      <p>Last updated: <time datetime="2025-10-31">October 31, 2025</time>.</p>
+      <p>Created with a minimalist template — edit freely. Last updated: <time datetime="2025-10-31">October 31, 2025</time>.</p>
     </footer>
   </div>
 </body>
