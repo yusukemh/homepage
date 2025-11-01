@@ -4,7 +4,7 @@
 
 .link_animation{
     position: relative;
-    /* color: var(--text); */
+    color: var(--link_default_blue);
     text-decoration: none;
 }
 

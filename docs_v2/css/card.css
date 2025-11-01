@@ -1,10 +1,11 @@
 .card{
     /* font-size:min(1000px, 1.8vw); */
-    font-size: clamp(15px, 1.8vw, 22px);
+    font-size: clamp(15px, 1.8vw, 18px);
     clear: both;
     color: var(--text);
     min-width: 20em;
     line-height: 1.2em;
+    scroll-margin-top: calc(var(--header_height) + 10px);
 }
 
 .card-left {

@@ -1,13 +1,15 @@
 :root {
     /* --poppins: "Poppins", sans-sefit; */
     --light: #c4c4c4;
-    --dark: #161616;
+    --dark: #565050;/*header and footer*/
     --white: #f7f7f7;
-    --text: rgb(255, 200, 200);
+    /* --text: rgb(255, 200, 200); */
+    --text: rgb(10, 12, 72);
     --text_dark: rgb(255, 180, 130);
-    --link_default_blue: rgb(80, 110, 255);
+    --link_default_blue: rgb(57, 6, 244);
     --header_height: 70px;
-    --footer_height: 160px;
+    --footer_height: 140px;
+    --header_font: 'Arial';
 }
 
 
@@ -22,9 +24,10 @@
 } */
 
 .background {
-    font-family: Poppins;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
     /* background-color: rgba(10, 4, 4, 0.8); */
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(251, 253, 245); /*body background*/
     /* background-image: url(../imgs/background.jpeg); */
     background-attachment: fixed;
     background-blend-mode: darken;

@@ -31,9 +31,12 @@
     font-size: max(6vw, 2.5em);
 }
 
+html {
+  scroll-behavior: smooth;/*allows links to smoothly move to the destination*/
+}
 
 </style>
-    <div class="card card-left">
+    <div class="card card-left" id="top">
         <div class='title'>Yusuke Hatanaka</div>
         <div class="container">
             <img src="./imgs/face.jpeg" style="width:120px;height:120px; border-radius: 50%; display: inline;">
@@ -46,7 +49,7 @@
     <div class="divider"></div>
 
 
-    <div class="card card-right">
+    <div class="card card-right" id="research">
         <div class='title'>Research</div>
         My interest is centered around applying machine learning to solving problems involving climate and weather in Hawai`i.
         <ul id="projectlist">
@@ -54,7 +57,7 @@
         </ul>
     </div>
 
-    <div class="card card-left">
+    <div class="card card-left" id="experience">
         <div class='title'>Professional Experience</div>
         <ul>
             <li><b>PI-CASC Scholar,</b><span class="misc">Graduate Research Assistant</span></li>
@@ -65,7 +68,7 @@
     </div>
 
 
-    <div class="card card-right">
+    <div class="card card-right" id="education">
         <div class='title'>Education</div>
         <ul>
             <li>University of Hawai`i at Manoa</li>
@@ -103,6 +106,9 @@
             _close.className = 'link_animation'
             _close.onclick = () => toggleContent(event, projects[i].project_id)
             _close.innerHTML = "Close"
+            _close.style.position = 'absolute';
+            _close.style.right = '0.5em';
+            _close.style.bottom = '0.5em';
 
             li.appendChild(a)
             li.appendChild(hidden_wrapper)
@@ -146,39 +152,26 @@
 
             // Create main container div
             const container = document.createElement("div");
-            // container.style.maxWidth = "600px";
             container.style.overflow = "hidden";
-            // container.style.width = '100%';
-            // container.style.display = 'flex';
-            // container.style.alignItems = 'flex-start';
-            // container.style.flexWrap = 'wrap';
             
 
             // Create image element
             const img = document.createElement("img");
-            // img.style.overflow = 'hidden';
             img.src = imageSrc;
             img.alt = "Image";
             img.style.float = "left";
-            // img.style.position = 'absolute';
+
             img.style.marginRight = "15px";
             // img.style.width = sizes[imageSize] || sizes.medium; // Default to medium
-            // img.style.width = "28vw";
             img.style.width = "33%";
-            // img.style.display = 'flex';
-            // img.style.flex = '0 0 auto';
-            // img.style.width = '100%';
             img.style.height = "auto";
 
             // Create paragraph element
             const p = document.createElement("p");
             p.textContent = text;
             p.style.overflow = "hidden";
-            // p.style.alignSelf = 'center';
             // p.style.position = "absolute";
             p.style.left = "37.5%";
-            // p.style.flex = "1";
-            // p.style.transform = "translateX(-50%)";
 
             // Append elements to container
             container.appendChild(img);

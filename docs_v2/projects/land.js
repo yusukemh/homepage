@@ -9,7 +9,7 @@ var projects = [
     {
         "project_name": "Topographical Gaussian Process",
         "project_id": "project_tgp",
-        "summary": "Gaussian Process with topography-aware unisotropic kernel for rainfall interpolation",
+        "summary": "Gaussian Process with topography-aware anisotropic kernel for rainfall interpolation",
         "abstract": "",
         "img": "",
     },
