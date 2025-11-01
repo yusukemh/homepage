@@ -2,4 +2,6 @@
     padding-top: calc(var(--header_height) + 20px);
     padding-bottom: var(--footer_height);
     padding-bottom: 400px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }

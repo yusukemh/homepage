@@ -1,1 +1,310 @@
-hello world
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Statement of Purpose • Evidence of Competency • Scholarly Ability</title>
+  <meta name="description" content="Statement of Purpose, Evidence of Core Competency, and Evidence of Scholarly Ability — single-file template." />
+
+  <style>
+    /* Base */
+    :root{
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0b74de;
+      --accent-2: #0b9fde;
+      --radius: 14px;
+      --max-width: 980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg), #eef3fb 60%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* Layout */
+    .wrap{
+      max-width:var(--max-width);
+      margin:36px auto;
+      padding:28px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      margin-bottom:22px;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:18px;
+      box-shadow:0 6px 18px rgba(11,116,222,0.18);
+    }
+    header h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing: -0.2px;
+    }
+    header p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Navigation (in-page) */
+    nav{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin:12px 0 26px;
+    }
+    .nav-link{
+      background:transparent;
+      border:1px solid rgba(15,23,42,0.06);
+      padding:8px 12px;
+      border-radius:10px;
+      text-decoration:none;
+      color:var(--accent);
+      font-weight:600;
+      font-size:13px;
+      transition:all .18s ease;
+    }
+    .nav-link:hover{ transform:translateY(-2px); box-shadow:0 6px 18px rgba(11,116,222,0.06) }
+
+    /* Card / sections */
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:0 6px 22px rgba(15,23,42,0.04);
+      margin-bottom:18px;
+      border: 1px solid rgba(15,23,42,0.03);
+    }
+
+    .section-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:12px;
+    }
+    .section-head h2{
+      margin:0;
+      font-size:16px;
+    }
+    .section-head .subtitle{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Two-column layout for evidence sections on wider screens */
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:16px;
+    }
+    @media(min-width:900px){
+      .grid-2{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .item-title{
+      font-weight:700;
+      margin:0 0 6px 0;
+      font-size:14px;
+    }
+    .item-meta{
+      margin:0 0 10px 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .item-desc{ margin:0; font-size:14px; color:#10203a }
+
+    /* small utilities */
+    .muted{ color:var(--muted); font-size:13px; }
+    .tag{
+      display:inline-block;
+      font-size:12px;
+      padding:6px 8px;
+      border-radius:999px;
+      background:rgba(11,116,222,0.08);
+      color:var(--accent);
+      font-weight:600;
+      margin-right:8px;
+    }
+
+    footer{
+      margin-top:20px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{ background: white; }
+      nav, .logo { display:none; }
+      .wrap{ max-width:100%; padding:0; margin:0 }
+      .card{ box-shadow:none; border: none; border-radius:0; padding:0 0 18px 0 }
+      header{ margin-bottom: 0; }
+    }
+
+    /* Accessibility focus */
+    a:focus, button:focus { outline:3px solid rgba(11,116,222,0.15); outline-offset:3px; }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header aria-label="Document header">
+      <div class="logo" aria-hidden="true">SP</div>
+      <div>
+        <h1>Statement of Purpose — Evidence of Competency — Scholarly Ability</h1>
+        <p class="muted">A concise single-file template. Replace placeholders with your real text, links, and citations.</p>
+      </div>
+    </header>
+
+    <nav aria-label="In-page navigation">
+      <a class="nav-link" href="#purpose">Statement of Purpose</a>
+      <a class="nav-link" href="#competency">Evidence of Core Competency</a>
+      <a class="nav-link" href="#scholarship">Evidence of Scholarly Ability</a>
+    </nav>
+
+    <!-- Statement of Purpose -->
+    <section id="purpose" class="card" aria-labelledby="purpose-heading">
+      <div class="section-head">
+        <h2 id="purpose-heading">1. Statement of Purpose</h2>
+        <div class="subtitle">Short summary of aims, motivation, and fit</div>
+      </div>
+
+      <p class="muted" style="margin-top:8px;">
+        Use this section to explain your goals, the problem you want to solve, and why you are a strong fit.
+        Aim for clarity and concision: explain WHAT you want to do, WHY it matters, and HOW you will approach it.
+      </p>
+
+      <hr style="border:none;border-top:1px solid rgba(15,23,42,0.04);margin:14px 0">
+
+      <article>
+        <h3 class="item-title">Elevator summary</h3>
+        <p class="item-desc">I am applying to [program/position] to pursue [research/project topic]. My background in [field] and experience with [skills or tools] have prepared me to address [specific challenge].</p>
+
+        <h3 class="item-title" style="margin-top:14px">Objectives (3–4 bullets)</h3>
+        <ul style="margin:8px 0 0 20px">
+          <li>Objective 1 — what you want to accomplish (measurable when possible).</li>
+          <li>Objective 2 — the methods or approaches you will use.</li>
+          <li>Objective 3 — the expected impact or contribution to the field.</li>
+        </ul>
+
+        <h3 class="item-title" style="margin-top:14px">Fit & timeline</h3>
+        <p class="item-desc">Concise note about why this program/group/institution is a good fit (e.g., faculty, resources), plus a high-level timeline (months/years).</p>
+      </article>
+    </section>
+
+    <!-- Evidence of Core Competency -->
+    <section id="competency" class="card" aria-labelledby="competency-heading">
+      <div class="section-head">
+        <h2 id="competency-heading">2. Evidence of Core Competency</h2>
+        <div class="subtitle">Skills, coursework, professional experience, and artifacts</div>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        Show concrete proof of core competencies (technical skills, methodologies, domain knowledge). Include links to artifacts (code, reports, portfolios), short descriptions, and outcomes.
+      </p>
+
+      <div class="grid-2" style="margin-top:12px">
+        <div>
+          <h4 class="item-title">Technical Skills</h4>
+          <p class="item-meta">Programming, tools, and methods</p>
+          <p class="item-desc"><span class="tag">Python</span><span class="tag">Git</span><span class="tag">Machine Learning</span>
+          <br>Examples: implemented data-processing pipelines for X; authored reusable libraries; unit-tested production code.</p>
+        </div>
+
+        <div>
+          <h4 class="item-title">Relevant Projects</h4>
+          <p class="item-meta">Short descriptions + links to artifacts</p>
+
+          <div style="margin-top:8px">
+            <p style="margin:0"><strong>Project A</strong> — <span class="muted">Jan 2024</span></p>
+            <p class="item-desc" style="margin-top:6px">Brief: What it did, your role, technical highlights, and a measurable outcome (e.g., improved performance, users reached). <br><a href="#" aria-label="Project A link">Link to repo / report</a></p>
+          </div>
+
+          <div style="margin-top:12px">
+            <p style="margin:0"><strong>Project B</strong> — <span class="muted">Aug 2023</span></p>
+            <p class="item-desc" style="margin-top:6px">Brief: What it did, your role, and why it demonstrates competency. <br><a href="#" aria-label="Project B link">Link to demo / slides</a></p>
+          </div>
+        </div>
+      </div>
+
+      <hr style="border:none;border-top:1px solid rgba(15,23,42,0.04);margin:16px 0">
+
+      <div>
+        <h4 class="item-title">Professional / Teaching Experience</h4>
+        <p class="item-meta">Roles that show applied competency</p>
+
+        <div style="margin-top:8px">
+          <p style="margin:0"><strong>Job or TA Role</strong> — <span class="muted">Employer / Institution • dates</span></p>
+          <p class="item-desc" style="margin-top:6px">Short bullets describing responsibilities and accomplishments that relate to core skills (e.g., designed curriculum, led code review, optimized model inference).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evidence of Scholarly Ability -->
+    <section id="scholarship" class="card" aria-labelledby="scholarship-heading">
+      <div class="section-head">
+        <h2 id="scholarship-heading">3. Evidence of Scholarly Ability</h2>
+        <div class="subtitle">Research, publications, presentations, and critical thinking</div>
+      </div>
+
+      <p class="muted" style="margin-top:8px">
+        Summarize your scholarly output and reasoning skills: publications, preprints, conference talks, posters, technical reports, or high-quality coursework / theses.
+      </p>
+
+      <div style="margin-top:12px">
+        <h4 class="item-title">Publications & Preprints</h4>
+        <p class="item-meta">Peer-reviewed work and preprints</p>
+
+        <ol style="margin:8px 0 0 20px">
+          <li><strong>Author, Title</strong>. Venue, Year. Short one-line summary of contribution. <a href="#" aria-label="paper 1 link">[PDF]</a></li>
+          <li><strong>Author, Title</strong>. Venue, Year. One-line summary of result and significance. <a href="#" aria-label="paper 2 link">[PDF]</a></li>
+        </ol>
+      </div>
+
+      <div style="margin-top:12px">
+        <h4 class="item-title">Presentations & Teaching</h4>
+        <p class="item-meta">Invited talks, conference presentations, and teaching experience</p>
+        <p class="item-desc">E.g., "Invited talk at XYZ workshop — concise summary; developed and delivered advanced graduate course on ... (link to syllabus/slides)." </p>
+      </div>
+
+      <div style="margin-top:12px">
+        <h4 class="item-title">Research Statement (brief)</h4>
+        <p class="item-desc">Explain the central research question(s) you've addressed, the methods you used, key results, and future directions. Keep it focused and tie to the Statement of Purpose objectives.</p>
+      </div>
+
+      <hr style="border:none;border-top:1px solid rgba(15,23,42,0.04);margin:16px 0">
+
+      <div>
+        <h4 class="item-title">References & Supporting Materials</h4>
+        <p class="item-meta">People who can speak to your scholarship</p>
+        <p class="item-desc">List 2–3 referees (name, title, institution, email) and any supplementary materials (links to datasets, code used in publications, reproducible notebooks).</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created with a minimalist template — edit freely. Last updated: <time datetime="2025-10-31">October 31, 2025</time>.</p>
+    </footer>
+  </div>
+</body>
+</html>
