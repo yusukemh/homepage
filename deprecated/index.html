@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Loading the contents using $ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <!-- mathjax -->
+    <script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+    <script src="script.js"></script>
+
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
+
+    <!-- Smooth transition -->
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $("#container").css("display", "none");
+            $("#container").fadeIn(300);
+        });
+    </script> -->
+
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $('#long_home').load("long_home.html");
+            $('#long_me').load("long_me.html");
+            $('#long_notes').load("long_notes.html");
+
+
+            $("#footer").load("footer.html");
+        })
+    </script>
+</head>
+
+<body class='background'>
+
+    <div id="header" style="font-family: Poppins;"></div>
+
+    <div class="container">
+        <div id="long_home" style="display: none;"></div>
+        <div id="long_me" style="display: none;"></div>
+        <div id="long_notes" style="display: block;">NOTES</div>
+        <div id="projects" style="display: none;">PROJECTS</div>
+        <div id="archive" style="display: none;">ARCHIVE</div>
+        <div id="resume" style="display: none;">RESUME</div>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+
+
+
+
+    <!-- <div id="header" style="font-family: Poppins;"></div>
+
+    <div class="container">
+
+        <div id="short_me"></div>
+
+        <hr class="divider">
+
+        <div id="short_notes"></div>
+
+        <hr class="divider">
+
+        <div id="short_projects"></div>
+
+        <hr class="divider">
+
+        <div id="short_archive"></div>
+
+        <hr class="divider">
+
+        <div id="short_resume"></div>
+
+        <hr class="divider">
+    </div>
+    <div id="footer"></div> -->
+</body>
+
+</html>
