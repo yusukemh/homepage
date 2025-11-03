@@ -1,7 +1,9 @@
 
 
 footer{
-    background-color: var(--dark);
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.1); /* shadow above */
+    /* background-color: rgb(225, 234, 234); */
+    background-color: var(--body_color_bottom);
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -9,7 +11,7 @@ footer{
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     font-family: Roboto Flex;
 }

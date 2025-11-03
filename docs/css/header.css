@@ -18,10 +18,12 @@
     /* height: 70px; */
     height: var(--header_height);
     width: 100%;
-    background: var(--dark);
+    background: var(--body_color_top);
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border-bottom: 1px solid #ccc; */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     /* background: linear-gradient(180deg, #32455f, #bccae0 100%); */
     /* float: left; */
 }
