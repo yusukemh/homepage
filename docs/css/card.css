@@ -1,8 +1,10 @@
 .card{
     /* font-size:min(1000px, 1.8vw); */
     font-size: clamp(15px, 1.8vw, 18px);
+    /* : rgb(81, 81, 82); */
     clear: both;
-    color: var(--text);
+    /* color: var(--text); */
+    color: rgb(83, 83, 83);
     min-width: 20em;
     line-height: 1.2em;
     scroll-margin-top: calc(var(--header_height) + 10px);
@@ -23,6 +25,7 @@
 
 .title {
     text-align: center;
+    color: var(--text)!important;
     font-size: 60px !important;
     font-size: clamp(45px, 4vw, 60px) !important;
     margin-bottom: 30px;

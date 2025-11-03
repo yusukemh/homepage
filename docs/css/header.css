@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background: linear-gradient(180deg, #32455f, #bccae0 100%); */
     /* float: left; */
 }
 
@@ -39,9 +40,11 @@
     text-decoration: none;
     /* padding: 17px 0; */
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     /* font-family: sans-serif; */
-    font-family: var(--header_font);
+    /* font-family: var(--header_font); */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 10;
     /* padding: 2rem; */
 }
 
