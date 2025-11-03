@@ -16,6 +16,12 @@
     width: 65%;
 }
 
+.card-center {
+    margin-left: 5px;
+    padding-left: 5px;
+    width: 80%;
+}
+
 .card-right {
     margin-right: 5px;
     padding: 0px 30px 0px 30px;
