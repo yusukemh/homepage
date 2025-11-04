@@ -16,14 +16,14 @@ var projects = [
     {
         "project_name": "Topographical Gaussian Process",
         "project_id": "project_tgp",
-        "summary": "Gaussian Process with topography-aware anisotropic kernel for rainfall interpolation. Kernel is enhanced with local topographic information to have anisotropic covariance in the input space. This is achieved by augmenting the kernel with extra information about the existense of the peaks/valleys between every points. [Left]: Predicted interpolation of monthly rainfall over the Island of Oahu in July, 2000. The model interpolates between the given context points (observed monthly rainfall amounts at sparse weather stations.)",
+        "summary": "Gaussian Process with topography-aware anisotropic kernel for rainfall interpolation. Kernel is enhanced with local topographic information to have anisotropic covariance in the input space. This is achieved by augmenting the kernel with extra information about the existense of the peaks/valleys between every points. [Left]: Predicted interpolation of monthly rainfall over the Island of O`ahu in July, 2000. The model interpolates between the given context points (observed monthly rainfall amounts at sparse weather stations.)",
         "abstract": "",
         "img": "./imgs/tgp.png",
     },
     {
         "project_name": "Diffusion Models for High-resolution Solar Irradiance",
         "project_id": "project_nimbus_diffusion",
-        "summary": "Diffusion model was implemented to downscale Global Forecast Model (GFS) in 30 km down to sub-km grid points over the island of Oahu. This work is publicly recognized as one of the first researches to apply diffusion models in weather forecasting settings. (Search for 'Awesome Diffusion Models for Weather Forecasting.') [Left]: Generated samples from diffusion model.",
+        "summary": "Diffusion model was implemented to downscale Global Forecast Model (GFS) in 30 km down to sub-km grid points over the island of O`ahu. This work is publicly recognized as one of the first researches to apply diffusion models in weather forecasting settings. (Search for 'Awesome Diffusion Models for Weather Forecasting.') [Left]: Generated samples from diffusion model.",
         "abstract": "",
         "img": "./imgs/cloud.png",
     }
