@@ -4,6 +4,7 @@
     display: flex;
     align-items: center; /* Aligns text vertically in the middle */
     gap: 20px; /* Adds spacing between image and text */
+    flex-direction: column;
 }
 
 .container img {
@@ -31,6 +32,27 @@
     font-size: max(6vw, 2.5em);
 }
 
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;        /* important */
+  max-width: 400px;   /* optional limit */
+  margin: 0px auto 0;
+}
+
+.social-links a {
+  font-size: 28px;
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.15);
+}
+
 html {
   scroll-behavior: smooth;/*allows links to smoothly move to the destination*/
 }
@@ -40,10 +62,16 @@ html {
         <div class='title'>Yusuke Hatanaka</div>
         <div class="container">
             <img src="./imgs/face.jpg" style="width:200px;height:200px; border-radius: 50%; display: inline;">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yusukemh/" target="_blank"><i class="si si-linkedin"></i></a>
+                <a href="mailto:yusukemh@hawaii.edu"><i class="si si-maildotru"></i></a>
+                <a href="https://scholar.google.com/citations?user=87kvtp8AAAAJ&hl=en" target="_blank"><i class="si si-googlescholar"></i></a>
+            </div>
             <div class="text">
-                &emsp; I am a graduate student at the University of Hawai`i at Manoa pursuing PhD degree in Computer Science
+                &emsp; I am a graduate student at the University of Hawai&#699;i at M&#257;noa pursuing PhD degree in Computer Science
                 under Dr. Peter Sadowski. I am interested in machine learning application to climate and weather.
             </div>
+
         </div>
     </div>
     <div class="divider"></div>
@@ -60,7 +88,7 @@ html {
     <div class="card card-left" id="experience">
         <div class='title'>Professional Experience</div>
         <ul>
-            <li><b>Graduate Research Assistant</b><span class="misc"><br>University of Hawai`i at Manoa, <span style="font-size: small;">2020 - current</span></span></li>
+            <li><b>Graduate Research Assistant</b><span class="misc"><br>University of Hawai&#699;i at M&#257;noa, <span style="font-size: small;">2020 - current</span></span></li>
             <li><b>Machine Learning Consultant</b><span class="misc"><br>Nimbus-AI, LLC <span style="font-size: small;">2022 - current</span></span></li>
             <!-- <li><b>PI-CASC Scholar,</b><span class="misc">Graduate Research Assistant</span></li> -->
             <!-- <li><b>MITRE Corporation,</b><span class="misc">Contract</span></li> -->
@@ -73,13 +101,30 @@ html {
     <div class="card card-right" id="education">
         <div class='title'>Education</div>
         <ul>
-            <li>University of Hawai`i at Manoa</li>
+            <li>University of Hawai&#699;i at M&#257;noa</li>
                 <ul>
                     <li>Ph.D in Computer Science<span class="misc">Currently Enrolled</span></li>
                     <li>M.S. in Computer Science<span class="misc">Completed Dec, 2022</span></li>
                     <li>B.S. in Computer Science, Data Science Track<span class="misc">Completed Dec, 2020</span></li>
                 </ul>
         </ul>
+    </div>
+
+    <div class="card card-left" id="publications" style="width: 100%">
+        <div class='title' style="text-align: left;">Publications and Research Contributions</div>
+            <ul style="font-family: 'Times New Roman', Times, serif;">
+                <li><b>Yusuke Hatanaka</b>, Amila Indika, Thomas Giambelluca, Peter Sadowski, 2026: Super Resolution Statistical
+                    Downscaling from Sparce Observations with Deep Learning for Monthly Rainfall Projections in Hawai&#699;i.
+                    <i>Artificial Intelligence for the Earth Systems.</i></li>
+                <li>Karen Lee-Burkhart, <b>Yusuke Hatanaka</b>, Peter Sadowski, Qi Chen, 2026: Geospatial Foundation Model
+                    Embeddings Improve Land Surface Temperature Recovery in the Hawaiian Islands. <i>Submitted to Remote Sensing of Environment</i></li>
+                <li>Aleric Krenz, 2025: Diffusion Modeling for High-Resolution Weather Downscaling over the Hawaiian Islands.
+                    <i>Master's Thesis, University of Hawai&#699;i at M&#257;noa.</i></li>
+                <li><b>Yusuke Hatanaka</b>, Yannik Glaser, Geoff Galgon, Giuseppe Torri, Peter Sadowski, 2023: Diffusion models
+                    for high-resolution solar forecasts. <i>arXiv Preprint.</i></li>
+                <li><b>Yusuke Hatanaka</b>, 2022: Machine Learning Based Statistical Downscaling for Rainfall on Hawaiian Islands.
+                    <i>Master's Thesis, University of Hawai&#699;i at M&#257;noa.</i></li>
+            </ul>
     </div>
     
     <div class="card card-center" id="me">
@@ -88,7 +133,7 @@ html {
         <div class="container">
             <img src="./imgs/group_pic.jpg" style="width:40%; border-radius: 10%; display: inline;">
             <div class="text">
-                &emsp; My interests lie at the intersection of mathematics, programming, and geography. My current academic trajectory combines all three. I plan to pursue a PhD to become an expert in machine learning and to contribute to research in how machine learning can improve atmospheric science models.
+                &emsp; My interests lie at the intersection of mathematics, programming, and geography. I plan to pursue a PhD to become an expert in machine learning and to contribute to research in how machine learning can improve atmospheric science models.
                 I enjoy playing chess, watching movies, and going on hiking.
             </div>
         </div>
@@ -186,6 +231,7 @@ html {
             p.style.overflow = "hidden";
             // p.style.position = "absolute";
             p.style.left = "37.5%";
+            p.style.whiteSpace = "pre-line";
 
             // Append elements to container
             container.appendChild(img);
